@@ -1,0 +1,30 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh
+}
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 300px;
+}
+a {
+  color: #00B7FF;
+}
+input{
+  margin: 5px;
+  width: 100%;
+}
+button{
+  margin-top: 20px;
+  height: 30px;
+  width: 50%;
+}
+h1 {
+  margin: 5px;
+  margin-bottom: 20px;
+  color: forestgreen;
+}
