@@ -3,3 +3,4 @@
 *.html
 /public/images/*.*
 !/public/images/readme.md
+/node_modules/
