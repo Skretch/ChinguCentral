@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  position: relative;
+  height: 100vh;
+  width: 100vw; }
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+#panel-login {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 30px; }
+  #panel-login .loginbox {
+    height: 40px;
+    font-size: 1.2em;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding-left: 10px; }
+  #panel-login #panel-login-password {
+    margin-top: 20px; }
+  #panel-login .btnDefault {
+    float: right;
+    margin-top: 20px;
+    font-size: 1.2em;
+    padding: 2px 20px; }
+  #panel-login #btnRegister {
+    float: left; }

@@ -1,17 +1,34 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
-  "private": true,
+  "name": "chingucentral",
+  "version": "1.0.0",
+  "description": "Social network for learners",
+  "main": "app.js",
   "scripts": {
-    "start": "nodejs ./bin/www"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skretch/ChinguCentral.git"
+  },
+  "author": "Skretch",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Skretch/ChinguCentral/issues"
+  },
+  "homepage": "https://github.com/Skretch/ChinguCentral#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.0",
+    "morgan": "^1.7.0"
   },
   "dependencies": {
-    "express": "~4.0.0",
-    "static-favicon": "~1.0.0",
-    "morgan": "~1.0.0",
-    "cookie-parser": "~1.0.1",
-    "body-parser": "~1.0.0",
-    "debug": "~0.7.4",
-    "jade": "~1.3.0"
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1"
   }
 }

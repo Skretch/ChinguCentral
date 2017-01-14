@@ -1,2 +1,5 @@
 *.config
 *-dist.*
+*.html
+/public/images/*.*
+!/public/images/readme.md
