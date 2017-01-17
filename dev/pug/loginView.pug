@@ -1,10 +1,11 @@
 extends layout.pug
 
 block content
-  div#panel-login.center
-    div#panel-login-username
-      input(id='username' class='loginbox' type='text' placeholder='Username')
-    div#panel-login-password
-      input(id='password' class='loginbox' type='password' placeholder='Password')
-    button#btnLogin.btnDefault Login
-    button#btnRegister.btnDefault Register
+  div.fullscreen
+    div#panel-login.z-depth-1.center
+      div.inputs
+        input(type='text' placeholder='Username')#username
+        input(type='password' placeholder='Password')#password.topSpacer
+      div.buttons
+        div.btnDefault.btnRegister Register
+        div.btnDefault.btnLogin Login

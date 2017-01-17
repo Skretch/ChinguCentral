@@ -27,7 +27,9 @@ gulp.task('styles', function(){
 
 //HTML task
 gulp.task('html', function(){
-  gulp.src(['dev/pug/homeView.pug','dev/pug/loginView.pug'])
+  gulp.src(['dev/pug/homeView.pug',
+            'dev/pug/loginView.pug',
+            'dev/pug/registerView.pug'])
     .pipe(plumber())
     .pipe(pug())
     .pipe(gulp.dest('public'))

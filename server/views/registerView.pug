@@ -1,0 +1,14 @@
+extends layout.pug
+
+block content
+  div.fullscreen
+    div#panel-register.z-depth-1.center
+      div.inputs
+        div
+          input(placeholder="Username" type="text")#username
+          input(placeholder="Password" type="password")#password.topSpacer
+          input(placeholder="Password" type="password")#password.topSpacer
+        div
+          input(placeholder="Email" type="text")#eMail
+          input(placeholder="Birth Year (XXXX)" type="text")#birthyear.topSpacer
+      div#btnRegister.btnDefault.topSpacer Register

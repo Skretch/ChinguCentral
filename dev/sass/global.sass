@@ -1,0 +1,100 @@
+=placeholder
+  &::-webkit-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+
+//Default styles
+html
+  box-sizing: border-box
+  font-family: '/./fonts/roboto/Roboto-Medium.ttf'
+  background-color: #EEE
+
+*, *:before, *:after
+  box-sizing: inherit
+  margin: 0
+  padding: 0
+body
+  height: 100vh
+  width: 100vw
+  position: relative
+  overflow-x: hidden
+
+// Z-levels
+.z-depth-0
+  box-shadow: none !important
+
+.z-depth-1
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)
+
+.z-depth-1-half
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2)
+
+.z-depth-2
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3)
+
+.z-depth-3
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3)
+
+.z-depth-4
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3)
+
+.z-depth-5
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3)
+
+
+// classic clearfix
+.clearfix
+  clear: both
+
+
+// Custom styles
+.fullscreen
+  height: 100%
+  width: 100%
+.center
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+
+.btnDefault
+  padding: 5px 20px
+  display: inline-block
+  user-select: none
+  cursor: default
+  border: 1px solid rgba(0, 0, 0, 0.2)
+  border-radius: 3px
+
+  &:active
+    transform: translate(1px,1px)
+.topSpacer
+  margin-top: 20px
+input
+  //Clear it out
+  display: block
+  border: none
+  resize: none
+  outline: none
+  background-color: transparent
+  // -----------
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5)
+  padding: 10px
+  padding-left: 0
+
+  &:focus
+    border-color: rgba(0, 100, 0, 0.5)
+
+
+@-webkit-keyframes autofill
+  to
+    background: transparent
+
+
+input:-webkit-autofill
+  -webkit-animation-name: autofill
+  -webkit-animation-fill-mode: both
